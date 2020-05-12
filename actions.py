@@ -41,13 +41,13 @@ class ActionCustomSentiment(Action):
 
         if ss['neg'] >= 0.1:
             #tracker.trigger_followup_action(action_utter_getout)
-            dispatcher.utter_message('getout')
+            dispatcher.utter_message("getout")
         elif ss['pos'] >= 0.4:
             #tracker.trigger_followup_action(action_utter_ilike)
-            dispatcher.utter_message('ilike')
+            dispatcher.utter_message("ilike")
         else:
             #tracker.trigger_followup_action(action_utter_allfine)
-            dispatcher.utter_message('followup')
+            dispatcher.utter_message("followup")
             
             
         return []
